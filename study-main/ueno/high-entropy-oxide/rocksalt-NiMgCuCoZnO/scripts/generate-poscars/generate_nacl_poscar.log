@@ -1,0 +1,8 @@
+Starting job at Mon Jul  8 14:33:10 JST 2024
+Python environment /uhome/a01576/anaconda3/envs/ueno/bin/python found.
+Python script /uhome/a01576/ueno/study/high-entropy-oxide/rocksalt-NiMgCuCoZnO/scripts/generate-poscars/generate_nacl_poscar.py found.
+Conda initialized.
+Conda environment activated.
+Python script executed successfully.
+Conda environment deactivated.
+Job finished at Mon Jul  8 15:29:51 JST 2024

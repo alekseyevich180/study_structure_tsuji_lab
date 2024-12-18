@@ -1,0 +1,39 @@
+[project]
+name = "study"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "ipykernel",
+    "pandas",
+    "matplotlib==3.8",
+    "gpy",
+    "scikit-learn",
+    "mypy",
+    "ruff",
+    "numpy",
+    "ipython",
+    "jupyter_core",
+    "jupyter_client",
+    "fonttools",
+    "Cython",
+    "setuptools",
+    "pymatgen",
+    "python-dotenv>=1.0.1",
+    "paramiko>=3.5.0",
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/study"]

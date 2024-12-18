@@ -1,0 +1,10 @@
+.DS_Store
+requirements-dev.lock
+requirements.lock
+uv.lock
+.env
+busseiken_private
+**/POSCARs/
+**/note/
+**/results/
+**/__pycache__/

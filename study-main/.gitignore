@@ -1,0 +1,5 @@
+.DS_Store
+requirements-dev.lock
+requirements.lock
+**/POSCARs/
+**/results/

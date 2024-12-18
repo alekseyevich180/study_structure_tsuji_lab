@@ -1,0 +1,65 @@
+# SGGA calc
+# Basic setup:
+ISPIN = 2
+LSORBIT = .FALSE.
+# not using Hubbard U
+
+# Accuracy controls:
+# Use default energy cutoff for PREC
+
+# Electronic loop controls:
+ENCUT = 450
+ALGO = ALL # ALL
+EDIFF = 1E-5
+NELM = 500 # 500
+ISMEAR = 0
+SIGMA = 0.05000 # eV
+# NBANDS - using default
+
+# Relaxation control:
+IBRION = 2
+NSW = 2000 #
+POTIM = 0.500000
+ISIF = 3
+EDIFFG = -0.030000 # -0.010000
+
+# NEB
+# IMAGES = 4
+# SPRING = -5
+# LCLIMB = .TRUE.
+
+# Parallelization
+NPAR = 32
+LREAL = Auto
+NSIM = 1
+LPLANE = .TRUE.
+
+# vdW correction
+IVDW = 12
+
+# Properties:
+LCHARG = .FALSE.
+LWAVE = .FALSE.
+LELF = .FALSE.
+LVTOT = .FALSE.
+LVHAR = .FALSE.
+
+# Dipole correction
+#IDIPOL = 3
+#
+
+LDAU = .TRUE.
+LDAUTYPE = 2
+# Ni   Mg   Cu   Co   Zn   O
+LDAUL = 2 -1 2 2 2 -1
+LDAUU = 5.1 0.0 4.0 5.0 7.5 0.0
+LDAUJ = 0.0 0.0 0.0 0.0 0.0 0.0
+LDAUPRINT = 0
+LMAXMIX = 6
+
+#AMIX = 0.2 #This allows a rather easy optimization of the mixing parameters
+#BMIX = 0.00001 #This allows a rather easy optimization of the mixing parameters
+#AMIX_MAG = 0.8 #check https://www.vasp.at/wiki/index.php/AMIX_MAG
+#BMIX_MAG = 0.00001
+
+# NEDOS = 1000
